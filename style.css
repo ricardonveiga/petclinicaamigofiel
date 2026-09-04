@@ -123,14 +123,14 @@ section{ padding: 96px 0; }
   background: var(--ink); color: rgba(255,255,255,.82);
   font-size: 13px; font-weight: 500;
 }
-.topbar .container{ display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 14px; padding-top: 9px; padding-bottom: 9px; }
-.topbar-left{ display: flex; align-items: center; gap: 22px; }
+.topbar .container{ display: flex; align-items: center; justify-content: space-between; gap: 10px 14px; padding-top: 7px; padding-bottom: 7px; }
+.topbar-left{ display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }
 .topbar-left a{ display: inline-flex; align-items: center; gap: 7px; transition: color .2s; white-space: nowrap; }
 .topbar-left a:hover{ color: var(--orange-light); }
-.topbar-left svg{ width: 14px; height: 14px; color: var(--orange-light); }
-.topbar-badge{ display: inline-flex; align-items: center; gap: 7px; color: var(--orange-light); font-weight: 700; letter-spacing: .03em; white-space: nowrap; }
-.topbar-badge .dot{ width: 6px; height: 6px; border-radius: 50%; background: #4ADE80; box-shadow: 0 0 0 3px rgba(74,222,128,.25); flex-shrink: 0; }
-.topbar-hide-mobile{ display: none; }
+.topbar-left svg{ width: 14px; height: 14px; color: var(--orange-light); flex-shrink: 0; }
+.topbar-badge{ display: inline-flex; align-items: flex-start; gap: 7px; color: var(--orange-light); font-weight: 700; letter-spacing: .03em; text-align: right; max-width: 130px; }
+.topbar-badge .dot{ width: 6px; height: 6px; border-radius: 50%; background: #4ADE80; box-shadow: 0 0 0 3px rgba(74,222,128,.25); flex-shrink: 0; margin-top: 4px; }
+.topbar-hide-mobile{ display: inline-flex; }
 
 header.header{
   position: sticky; top: 0; z-index: 100;
@@ -412,9 +412,6 @@ header.header.scrolled{ border-color: var(--line); box-shadow: 0 4px 24px rgba(3
 }
 .review-author strong{ display: block; font-family: var(--font-head); font-size: 14.5px; }
 .review-author span{ font-size: 12.5px; color: var(--ink-soft); }
-.reviews-note{
-  margin-top: 28px; text-align: center; font-size: 13.5px; color: var(--ink-soft);
-}
 .reviews-cta{ display: flex; justify-content: center; margin-top: 24px; }
 
 /* ==========================================================================
@@ -520,7 +517,9 @@ footer.footer{ background: var(--ink); color: rgba(255,255,255,.66); padding-top
 }
 
 @media (min-width: 1000px){
-  .topbar-hide-mobile{ display: inline-flex; }
+  .topbar-left{ flex-direction: row; align-items: center; gap: 22px; }
+  .topbar-badge{ align-items: center; max-width: none; white-space: nowrap; }
+  .topbar-badge .dot{ margin-top: 0; }
   .nav-desktop{ display: flex; }
   .menu-toggle, .nav-mobile{ display: none; }
   .trustbar .container{ grid-template-columns: repeat(4, 1fr); }
