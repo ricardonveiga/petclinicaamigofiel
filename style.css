@@ -525,11 +525,11 @@ footer.footer{ background: var(--ink); color: rgba(255,255,255,.66); padding-top
 @media (min-width: 1000px){
   .nav-desktop{ display: flex; }
   .menu-toggle, .nav-mobile{ display: none; }
-  .trustbar .container{ grid-template-columns: repeat(4, 1fr); }
-  .care-grid{ grid-template-columns: repeat(4, 1fr); }
+  .trustbar .container{ grid-template-columns: repeat(5, 1fr); }
+  .care-grid{ grid-template-columns: repeat(3, 1fr); }
   .services-grid{ grid-template-columns: repeat(3, 1fr); }
   .reviews-grid{ grid-template-columns: repeat(3, 1fr); }
   .footer-top{ grid-template-columns: 1.3fr .8fr .8fr; }
-  .gallery-grid{ grid-template-columns: repeat(4, 1fr); }
+  .gallery-grid{ grid-template-columns: repeat(3, 1fr); }
   .gallery-item:nth-child(1){ grid-column: span 2; grid-row: span 2; aspect-ratio: 1/1; }
 }
