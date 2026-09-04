@@ -300,12 +300,6 @@ header.header.scrolled{ border-color: var(--line); box-shadow: 0 4px 24px rgba(3
 
 .about-copy h3.name{ font-size: 15px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--orange-dark); margin-top: 16px; }
 .about-copy p{ margin-top: 18px; font-size: 16.5px; color: var(--ink-soft); }
-.about-note{
-  margin-top: 26px; padding: 16px 18px; border-radius: var(--radius-sm);
-  background: var(--bg-soft); border: 1px dashed rgba(232,117,58,.4);
-  font-size: 13.5px; color: var(--ink-soft);
-}
-.about-note strong{ color: var(--ink); }
 .about-signature{ margin-top: 28px; font-family: var(--font-head); font-style: normal; font-size: 22px; color: var(--ink); font-weight: 600; }
 .about-signature small{ display: block; font-family: var(--font-body); font-size: 13px; font-weight: 500; color: var(--ink-soft); margin-top: 4px; }
 
