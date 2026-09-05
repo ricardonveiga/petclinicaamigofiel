@@ -260,23 +260,6 @@ header.header.scrolled{ border-color: var(--line); box-shadow: 0 4px 24px rgba(3
 .hero-logo-float img{ width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
 
 /* ==========================================================================
-   BARRA DE CONFIANÇA
-   ========================================================================== */
-.trustbar{ background: var(--ink); }
-.trustbar .container{
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 20px;
-  padding-top: 40px; padding-bottom: 40px;
-}
-.trust-item{ display: flex; align-items: center; gap: 14px; }
-.trust-item .icon-wrap{
-  width: 46px; height: 46px; border-radius: 13px; background: rgba(232,117,58,.16);
-  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-}
-.trust-item .icon-wrap svg{ width: 22px; height: 22px; color: var(--orange-light); }
-.trust-item strong{ display: block; font-family: var(--font-head); font-weight: 700; font-size: 15.5px; color: var(--white); }
-.trust-item span{ font-size: 13px; color: rgba(255,255,255,.58); }
-
-/* ==========================================================================
    NOSSO CUIDADO
    ========================================================================== */
 .care-grid{ display: grid; grid-template-columns: 1fr; gap: 22px; }
@@ -525,7 +508,6 @@ footer.footer{ background: var(--ink); color: rgba(255,255,255,.66); padding-top
 @media (min-width: 1000px){
   .nav-desktop{ display: flex; }
   .menu-toggle, .nav-mobile{ display: none; }
-  .trustbar .container{ grid-template-columns: repeat(5, 1fr); }
   .care-grid{ grid-template-columns: repeat(3, 1fr); }
   .services-grid{ grid-template-columns: repeat(3, 1fr); }
   .reviews-grid{ grid-template-columns: repeat(3, 1fr); }
